@@ -1,0 +1,13 @@
+name: Evidence Verification
+
+on: [push, pull_request]
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run verification suite
+        run: |
+          echo 'Verification suite - Coming soon'
+          # python automation/verification-scripts/run_all_verifications.py
